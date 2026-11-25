@@ -2,7 +2,7 @@
 
 **App:** OpenForYou Food Tracker (`com.openforyou.foodtracker`)
 **Developer / Entwickler:** OpenForYou
-**Contact / Kontakt:** darmenovalisher@gmail.com
+**Contact / Kontakt:** openforyoustudio@gmail.com
 **Last updated / Stand:** 2026-11-25
 
 ---
