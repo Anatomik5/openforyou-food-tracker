@@ -1,0 +1,4 @@
+{
+  "CFBundleDisplayName": "OpenForYou Food Tracker",
+  "NSCameraUsageDescription": "Die Kamera wird nur zum Scannen von Produkt-Barcodes auf deinem Gerät verwendet. Bilder werden weder gespeichert noch gesendet."
+}

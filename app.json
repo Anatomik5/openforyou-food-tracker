@@ -1,15 +1,28 @@
 {
   "expo": {
-    "name": "FoodTracker",
-    "slug": "FoodTracker",
+    "name": "OpenForYou Food Tracker",
+    "slug": "openforyou-food-tracker",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "ios": {
-      "supportsTablet": true
+    "userInterfaceStyle": "automatic",
+    "locales": {
+      "en": "./locales/en.json",
+      "de": "./locales/de.json",
+      "ru": "./locales/ru.json"
     },
     "android": {
+      "package": "com.openforyou.foodtracker",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -18,8 +31,29 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "The camera is used only to scan product barcodes on your device.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-localization",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F4F6F5",
+          "dark": {
+            "backgroundColor": "#121212"
+          }
+        }
+      ]
+    ]
   }
 }
