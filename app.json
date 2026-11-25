@@ -54,6 +54,12 @@
           }
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0c377f45-719c-45db-ac23-1030870cb156"
+      }
+    },
+    "owner": "openforyoustudio"
   }
 }
