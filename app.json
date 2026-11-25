@@ -6,11 +6,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "locales": {
-      "en": "./locales/en.json",
-      "de": "./locales/de.json",
-      "ru": "./locales/ru.json"
-    },
     "android": {
       "package": "com.openforyou.foodtracker",
       "versionCode": 1,
